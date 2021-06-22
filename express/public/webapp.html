@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" ></script>
+
+<body>
+    <div class="alert alert-primary" role="alert">
+        
+      </div>
+   <!-- Button trigger modal -->
+<br><br>
+    <div class="px"></div>
+    <div class="box">box</div>
+    <form action="http://localhost:8000/post" method="POST">
+      <input type="text" placeholder="user" name="username" id="user">
+      <input type="password" placeholder="password" name="password" id="pass">
+      <input type="submit">
+    </form>
+    <span id="span" ></span>
+    <button onclick="clickme()"></button>
+  
+</body>
+<style>
+
+  #div{
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid #999; background-color: aqua;
+  }
+  #div div{
+      width: 20vw;
+      height: 20vh;
+      background-color: red;
+  }
+  #div p {
+      width: 10rem;
+      height: 10rem;
+      background-color: rosybrown;
+  } 
+  .box{
+    padding: 100px;
+    border: 10px solid #999;
+    margin: 20px 20px 20px 200px;
+    background-color: red;
+   
+    width: 500px;
+    height: 500px;
+  }
+  /*0.5px的方法*/
+  .px{
+    height: 1px; 
+    background: linear-gradient(0deg, #fff, #000);
+    /* transform-origin: 50% 100%;
+    transform: scale(0.5); */
+    /* box-shadow: 0 0.5px 0 #000; */
+  }
+
+</style>
+<script type="text/javascript" >
+//src="./javascripts/req.js"
+
+let arr22 = [{username:"xiaom",password:"565656"},{username:"xiaowm",password:"56655656"}]
+arr22.forEach((a)=>{
+  let sdd = [a.username,a.password]
+  console.log(sdd)
+})
+
+// console.log(arr22[0].username)
+
+//深拷贝
+let arr = [1,2,[1,24,1],2,[1,2,0]]
+let obj={
+  a:{
+    aa:12,
+    bb:45
+  },
+  b:323,
+  c:{
+    s:45,
+    d:{
+      ss:45
+    }
+  }
+}
+const isObject = (obj)=>{
+  if(Object.prototype.toString.call(obj) === "[object Object]" || Object.prototype.toString.call(obj) === "[object Array]"  ){
+    return true
+  }
+}
+// console.log(isObject(arr))
+// console.log(Array.isArray(arr))
+function deepClone(obj){
+  if(isObject(obj)){
+    let newObj = Array.isArray(obj) ? []:{}
+    for(let i in obj){
+      if(isObject(obj[i])){
+        newObj[i]= deepClone(obj[i])
+      }
+      else{
+        newObj[i] = obj[i]
+      }
+    }
+    return newObj
+  }
+  else{
+    return obj
+  }
+}
+let arr2 = deepClone(obj)
+console.log(arr2)
+
+
+Function.prototype.myCall = function(func){
+    func? func = func:window
+    if(typeof this !=='function')
+    return
+    func._this = this 
+    //接收参数，maCall的arguments第一个参数为改变this指向的对象，所以要存放第二个之后的参数
+    //方法一
+    // let arr =Array.prototype.slice.call(arguments,1)
+    //二
+    let arr = []
+    for(let i = 0;i<arguments.length;i++){
+      arr[i] = arguments[i+1]
+    }
+    let result = func._this(...arr)
+    delete func._this
+    return result
+}
+Function.prototype.myApply = function(func){
+    func? func = func:window
+    if(typeof this !=='function')
+    return
+    func._this = this
+    console.log(arguments)
+    let arr2 = [...arguments[1]]
+    let result = func._this(...arr2)
+    delete func._this
+    return result
+}
+// Function.prototype.myBind = function(func){
+//     func? func = func:window
+//     if(typeof this !=='function')
+//     return
+//     let _this = this
+//     console.log(arguments[1])
+//     let arg = Array.prototype.slice(arguments,1)
+//     console.log('arg'+arg)
+//     function result(){
+//       var arg2 = Array.prototype.slice(arguments,0)
+//       return _this.apply(
+       
+//         arg.concat(arg2)
+//       )
+//     }
+//     result.prototype = func.prototype
+//     return result
+// }
+Function.prototype.myBind = function(context){
+   // 判断是否是一个函数 
+   if(typeof this !== "function") { throw new TypeError("Not a Function") } 
+   // 保存调用bind的函数
+    const _this = this // 保存参数 
+    const args = Array.prototype.slice.call(arguments,1)
+    // console.log(args)
+    // console.log(arguments[1],+'---'+args)
+     // 返回一个函数 
+    return function F () { 
+      console.log(this instanceof F)
+    // 判断是不是new出来的 
+    if(this instanceof F) { 
+    // 如果是new出来的 // 返回一个空对象，且使创建出来的实例的__proto__指向_this的prototype，且完成函数柯里化 
+      return new _this(...args,...arguments)
+    }
+    else{ 
+    // 如果不是new出来的改变this指向，且完成函数柯里化 
+      return _this.apply(context,args.concat(...arguments)) 
+    } 
+  } 
+}
+Function.prototype.myBind2 = function(context){
+   // 判断是否是一个函数 
+   if(typeof this !== "function") { throw new TypeError("Not a Function") } 
+   // 保存调用bind的函数
+    context._this = this // 保存参数 
+    const args = Array.prototype.slice.call(arguments,1)
+    // console.log(args)
+    // console.log(arguments[1],+'---'+args)
+     // 返回一个函数 
+    return function F () { 
+      return context._this(...args.concat(...arguments)) 
+    // 判断是不是new出来的 
+  } 
+}
+// var name = 'sad'
+// var b = 10
+// function a (age){
+//   console.log(this.name + age)
+// }
+// 测试call
+var z = 100
+var name = 'xiaoming '
+function bb(x,y){
+  result = x+this.z+y
+  console.log(result + '-' + this.name)
+}
+var obj2 = {
+  name:'obj',
+  z:15
+}
+let c = bb.myBind2(obj2,1)
+c(2)
+
+// let bind = a.myBind(obj,'asd')
+// let bind2 = bb.myBind(obj,1,2)
+// bind2()
+// bind()
+// bb.myApply(obj,[1,2])
+// a.myCall(obj,'sda')
+
+// let c = bb.bind(obj,1,2) 
+// bb.myCall(obj,50)
+// bb(5)
+
+class myPromise{
+  constructor(e){
+    this.result = undefined
+    this.state = "pending"
+    this.reson = undefined
+    this.successCB =[]
+    this.failCB = []
+    let resolve=(value)=>{
+      if(this.state === "pending"){
+        this.result =value
+        this.state = "fulfailles"
+        //异步处理then
+        this.successCB.forEach(f=>{
+          f()
+        })
+      }
+       
+    }    
+    let reject = (value)=>{
+      if(this.state === "pending"){
+        this.result =value
+        this.state = "rejected"
+        this.failCB.forEach(f=>{
+          f()
+        })
+      }
+    }
+    try {
+      e(resolve,reject)
+    }
+    catch(err){
+      reject(err)
+    }
+  }    
+  then = (onResolved,onRejected)=>{
+    if(this.state === "fulfailles"){
+      onResolved(this.result)
+    }
+    if(this.state === "rejected"){
+      onRejected(this.result)
+    }
+    if(this.state === "pending"){
+      this.successCB.push(()=>{
+        onResolved(this.result)
+      })
+      this.failCB.push(()=>{
+        onRejected(this.result)
+      })
+    }   
+  }
+}
+myPromise.all = function(arr){ 
+      return new myPromise((resolve,reject)=>{
+        let allResult = []
+        let count = 0
+        for(let i = 0;i<arr.length;i++){
+          arr[i].then(res=>{
+            allResult[i] = res
+            count ++
+          },res=>{
+            reject(res)
+          })
+        }
+        if(arr.length == allResult.length){
+          resolve(allResult)
+        }
+        
+        // else{
+          
+        // }
+        
+      })
+    }  
+
+let p2 = new myPromise((resolve,reject)=>{
+   // setTimeout(() => {
+    
+  // }, 10000);
+  resolve('ok')
+ 
+})
+let p3 = new myPromise((resolve,reject)=>{
+  // setTimeout(() => {
+    
+  // }, 10000);
+  resolve('ok')
+})
+let p = myPromise.all([p2,p3])
+console.log(p)
+// let p4 = new myPromise((resolve,reject)=>{
+//   setTimeout(() => {
+//     reject('mno')
+//   }, 100);
+// })
+// let p5 = new Promise((resolve,reject)=>{
+//   setTimeout(() => {
+//     reject('no')
+//   }, 100);
+// })
+// let p2 = new Promise((resolve,reject)=>{
+//   setTimeout(() => {
+//     reject('no')
+//   }, 100).then(res=>{
+
+//   });
+// })
+// const result = Promise.all([p2,p5])
+
+
+
+
+
+// console.log('begin async')
+// async function asyncfunc(){
+//     return 255
+// }
+// asyncfunc().then(res=>console.log(res))
+// console.log(asyncfunc())
+// console.log(23)
+
+//获取今日到指定日期的天数
+// function getDay(){
+//   let today = new Date()
+//   console.log(today)
+//   let day2 = new Date()
+//   day2.setFullYear(2021,3,14) //月份需要-1
+//   var today_ms = Date.parse(today.toDateString())
+//   console.log(today_ms + 'haomiao')
+//   var day2_ms = Date.parse(day2.toDateString())
+//   var fi = day2_ms - today_ms
+//   console.log(fi/1000/60/24/60)
+// }
+// getDay()
+// var obj =new Object
+// console.log(obj)
+// var a = 1
+// switch(a){
+//   case 8 :
+//     a ++;
+    
+//     case 1 : 
+//     a++;
+//     break
+//     case 10:
+//       a = 10;
+//     case '220':
+//       a =200
+// }
+// console.log(a)
+
+//promise
+    // let pro = new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{resolve(1)},5000)
+    // }).then(res=>console.log(res))
+  
+
+
+//     function employee(name,age,salary){
+//         this.salary = salary
+//         this.age = age
+//         this.name = name
+//         this.count2 =function(){
+//             console.log("count")
+//         }
+//     }
+//     employee.prototype.count = function(){
+//         return this.salary *30 
+//     }
+ 
+
+//     //构造继承
+//     var Xh = function(name,age,salary){
+//             employee.call(this)
+//             this.salary = salary
+//             this.age = age
+//             this.name = name
+//     }
+//     Xh.prototype = new employee()
+
+//     var xh = new Xh('xh',25,222)
+//     console.log(xh.count2)
+//     console.log(xh)
+
+   //继承
+  //  function Animal(name,){
+  //      this.name = name
+  //      this.sleep = function(){
+  //       console.log(this.name + 'sleep')
+  //      }
+  //  }
+  //  Animal.prototype.eat = function(){
+  //      console.log(this.name + 'eat' +this )
+  //  }
+  //  function Son(){
+  //    this.name = 'dog'
+  //    var son = new Animal()
+  //    return son
+  //  }
+  //  Son().eat()
+  //  console.log(Son())
+//    //原型链继承
+//    function Cat(){}
+//    Cat.prototype = new Animal()
+//    Cat.prototype.name = "cat"
+//    var cat = new Cat()
+//    console.log(cat)
+//    cat.eat()
+//    //构造函数继承 不能使用原型上面的方法
+//    function Dog(name){
+//        Animal.call(this)
+//        this.name = name
+//    }
+//    var dog = new Dog('dog')
+//    console.log(dog.name)
+//    dog.sleep()
+//    //组合继承
+//    function Bird(name){
+//        Animal.call(this)
+//        this.name = name
+//    }
+//    Bird.prototype = new Animal()
+//    Bird.prototype.constructor = Bird
+//    var bird = new Bird('bird')
+
+//    console.log(bird.name)
+//    bird.sleep()
+//    bird.eat()
+
+
+</script>
+
+</html>

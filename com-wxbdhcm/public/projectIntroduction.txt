@@ -1,0 +1,17 @@
+	vue + axois+ vuex + vue-router + json-server +element ui 
+1)功能实现：
+	a):json-server 搭建本地接口
+	b):axois +promise 异步接收商品数据
+	c):vuex实现购物车、订单统一管理
+	d):用户注册、登录，登陆后可开放商品页面
+	e):实现商品加入购物车，购物车、订单增删修查
+
+
+
+准备做一个线上学习的网页 
+使用技术 vue + element ui + mysql + express 
+功能实现：
+ 	用户注册 登录 ，登录后开放课程学习页面
+	学习页实习课程分类
+	实现管理人员后台管理，包括对用户账号、课程增删修查
+

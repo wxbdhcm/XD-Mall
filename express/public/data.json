@@ -1,0 +1,334 @@
+{
+    "tv":[
+        {
+            "id":"8",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"小米11",
+            "price":"3999",
+            "number" : "0",
+            "introduction":"全面屏设计"
+        },
+        {
+            "id":"9",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/4e75e528fb468aee107f551179aa0799.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"note 9 pro",
+            "price":"1599",
+            "number" : "0",
+            "introduction":"全面屏设计，海量内容"
+        },
+        {
+            "id":"10",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/de2f71a797a74e1ca70f1fb4570bc026.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"note 9 ",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"大屏更享受"
+        },
+        {
+            "id":"11",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/13f10e47913f9dc82e6c6a6199f413cd.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"note 9 4G",
+            "price":"1099",
+            "number" : "0",
+            "introduction":"新一代独立显卡"
+        },
+        {
+            "id":"12",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"小米11",
+            "price":"3999",
+            "number" : "0",
+            "introduction":"全面屏设计"
+        },
+        {
+            "id":"13",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/4e75e528fb468aee107f551179aa0799.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"note 9 pro",
+            "price":"1599",
+            "number" : "0",
+            "introduction":"全面屏设计，海量内容"
+        },
+        {
+            "id":"14",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/de2f71a797a74e1ca70f1fb4570bc026.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"note 9 ",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"大屏更享受"
+        },
+        {
+            "id":"15",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/13f10e47913f9dc82e6c6a6199f413cd.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"note 9 4G",
+            "price":"1099",
+            "number" : "0",
+            "introduction":"新一代独立显卡"
+        }
+    ],
+    "computer":[
+        {
+            "id":"16",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"小米全面屏电视65英寸 E65X",
+            "price":"2999",
+            "number" : "0",
+            "introduction":"全面屏设计"
+        },
+        {
+            "id":"17",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d36fbaa18625e4fe507af31e4e9f83.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"全面屏电视E43K",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"全面屏设计，海量内容"
+        },
+        {
+            "id":"18",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/9d8674cd21c486feff5328772ab9cf01.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"小米电视4A 70英寸",
+            "price":"3399",
+            "number" : "0",
+            "introduction":"大屏更享受"
+        },
+        {
+            "id":"19",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"Air 13.3 2019款",
+            "price":"5999",
+            "number" : "0",
+            "introduction":"新一代独立显卡"
+        },
+        {
+            "id":"20",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"小米全面屏电视65英寸 E65X",
+            "price":"2999",
+            "number" : "0",
+            "introduction":"全面屏设计"
+        },
+        {
+            "id":"21",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d36fbaa18625e4fe507af31e4e9f83.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"全面屏电视E43K",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"全面屏设计，海量内容"
+        },
+        {
+            "id":"22",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/9d8674cd21c486feff5328772ab9cf01.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"小米电视4A 70英寸",
+            "price":"3399",
+            "number" : "0",
+            "introduction":"大屏更享受"
+        },
+        {
+            "id":"23",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"Air 13.3 2019款",
+            "price":"5999",
+            "number" : "0",
+            "introduction":"新一代独立显卡"
+        }
+       
+    ],
+    "watch":[
+        {
+            "id":"24",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/49f30069c778b494257320d9da5a1a60.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"手环5",
+            "price":"2999",
+            "number" : "0",
+            "introduction":"全面屏设计"
+        },
+        {
+            "id":"25",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/ec0ec7692ba005710d1887262559609c.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"手表",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"全面屏设计，海量内容"
+        },
+        {
+            "id":"26",
+            "img":"//cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=250&h=250",
+            "name":"平衡车",
+            "price":"3399",
+            "number" : "0",
+            "introduction":"大屏更享受"
+        },
+        {
+            "id":"27",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"音响",
+            "price":"5999",
+            "number" : "0",
+            "introduction":"新一代独立显卡"
+        },
+        {
+            "id":"28",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/49f30069c778b494257320d9da5a1a60.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"手环5",
+            "price":"2999",
+            "number" : "0",
+            "introduction":"全面屏设计"
+        },
+        {
+            "id":"29",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/ec0ec7692ba005710d1887262559609c.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"手表",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"全面屏设计，海量内容"
+        },
+        {
+            "id":"20",
+            "img":"//cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=250&h=250",
+            "name":"平衡车",
+            "price":"3399",
+            "number" : "0",
+            "introduction":"大屏更享受"
+        },
+        {
+            "id":"31",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/5fc35cf0af915a9e60f5d4ea220521ab.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"音响",
+            "price":"5999",
+            "number" : "0",
+            "introduction":"新一代独立显卡"
+        } 
+    ],
+    "parts":[
+        {
+            "id":"32",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8fde8a877fd4b12ad88119d9b6bc061.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"小米氮化镓GaN充电器 Type-C ",
+            "price":"199",
+            "number" : "0",
+            "introduction":"氮化镓黑科技 65W MAX 大功率快充"
+        },
+        {
+            "id":"254",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/9eb0178e3bfeb7d170edd641fb4be4bc.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"无线快充",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"快速无线充电"
+        },
+        {
+            "id":"355",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"充电宝",
+            "price":"299",
+            "number" : "0",
+            "introduction":"充电宝青春活力"
+        },
+        {
+            "id":"447",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/e4b3bff030170ad1a07dfb50311352c9.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"充电头",
+            "price":"5999",
+            "number" : "0",
+            "introduction":"超级快充，三台设备同时充"
+        },
+        {
+            "id":"5524",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8fde8a877fd4b12ad88119d9b6bc061.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"小米氮化镓GaN充电器 Type-C ",
+            "price":"199",
+            "number" : "0",
+            "introduction":"氮化镓黑科技 65W MAX 大功率快充"
+        },
+        {
+            "id":"655",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/9eb0178e3bfeb7d170edd641fb4be4bc.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"无线快充",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"快速无线充电"
+        },
+        {
+            "id":"742",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"充电宝",
+            "price":"299",
+            "number" : "0",
+            "introduction":"充电宝青春活力"
+        },
+        {
+            "id":"854",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/e4b3bff030170ad1a07dfb50311352c9.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"充电头",
+            "price":"5999",
+            "number" : "0",
+            "introduction":"超级快充，三台设备同时充"
+        }
+    ],
+    "around":[
+        {
+            "id":"50",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/03d94ee6059481a6adcb6c4c5c572fb4.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"jj保温杯",
+            "price":"199",
+            "number" : "0",
+            "introduction":"随身携带"
+        },
+        {
+            "id":"52",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/57433a4b991b2a2ddc889f2d8d434655.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"jj中性笔",
+            "price":"99",
+            "number" : "0",
+            "introduction":"一顶四"
+        },
+        {
+            "id":"53",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"太阳眼镜",
+            "price":"299",
+            "number" : "0",
+            "introduction":"woo"
+        },
+        {
+            "id":"54",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/f9017bebb14740ea46673aaa81a616cb.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"乳胶床垫",
+            "price":"1999",
+            "number" : "0",
+            "introduction":"双面可用"
+        },
+        {
+            "id":"55",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/03d94ee6059481a6adcb6c4c5c572fb4.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"jj保温杯",
+            "price":"199",
+            "number" : "0",
+            "introduction":"随身携带"
+        },
+        {
+            "id":"56",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/57433a4b991b2a2ddc889f2d8d434655.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"jj中性笔",
+            "price":"99",
+            "number" : "0",
+            "introduction":"一顶四"
+        },
+        {
+            "id":"57",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"太阳眼镜",
+            "price":"299",
+            "number" : "0",
+            "introduction":"woo"
+        },
+        {
+            "id":"58",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/f9017bebb14740ea46673aaa81a616cb.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"乳胶床垫",
+            "price":"1999",
+            "number" : "0",
+            "introduction":"双面可用"
+        }
+        
+    ]
+}

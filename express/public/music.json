@@ -1,0 +1,68 @@
+{
+    "music":[
+        {
+            "id":"8",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"all to well",
+            "price":"3999",
+            "number" : "0",
+            "introduction":"全面屏设计"
+        },
+        {
+            "id":"9",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/4e75e528fb468aee107f551179aa0799.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"the 1",
+            "price":"1599",
+            "number" : "0",
+            "introduction":"全面屏设计，海量内容"
+        },
+        {
+            "id":"10",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/de2f71a797a74e1ca70f1fb4570bc026.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"loves ",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"大屏更享受"
+        },
+        {
+            "id":"11",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/13f10e47913f9dc82e6c6a6199f413cd.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"exile",
+            "price":"1099",
+            "number" : "0",
+            "introduction":"新一代独立显卡"
+        },
+        {
+            "id":"12",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"august",
+            "price":"3999",
+            "number" : "0",
+            "introduction":"全面屏设计"
+        },
+        {
+            "id":"13",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/4e75e528fb468aee107f551179aa0799.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"mirroball",
+            "price":"1599",
+            "number" : "0",
+            "introduction":"全面屏设计，海量内容"
+        },
+        {
+            "id":"14",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/de2f71a797a74e1ca70f1fb4570bc026.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"betty ",
+            "price":"1299",
+            "number" : "0",
+            "introduction":"大屏更享受"
+        },
+        {
+            "id":"15",
+            "img":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/13f10e47913f9dc82e6c6a6199f413cd.jpg?thumb=1&w=250&h=250&f=webp&q=90",
+            "name":"peace",
+            "price":"1099",
+            "number" : "0",
+            "introduction":"新一代独立显卡"
+        }
+    ]
+}
