@@ -17,7 +17,6 @@ npm run serve
 # express 运行 
 npm start || nodemon start
 
-# 数据库为mysql
 ![image](https://user-images.githubusercontent.com/76027501/123036410-a7400f00-d41f-11eb-8472-513f990116ac.png)
 ![image](https://user-images.githubusercontent.com/76027501/123036488-c50d7400-d41f-11eb-81f7-a588a9d6f1ee.png)
 ![image](https://user-images.githubusercontent.com/76027501/123036595-ea01e700-d41f-11eb-9829-f06ec067dd93.png)
