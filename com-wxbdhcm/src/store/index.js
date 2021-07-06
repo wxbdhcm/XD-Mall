@@ -79,42 +79,46 @@ export default new Vuex.Store({
       }
     },
     //获取已注册用户
-    getUsers(state) {
-      axios.get('/api/users').then(
-        res => {
-          state.account = [...res.data]
-        }
-      ).catch((err) => { console.log(err) })
+    getUsers(state, playload) {
+      state.account = playload
     },
     //获取商品数据
-    getShop(state) {
-      new Promise((resolve, reject) => {
-        axios.get("/api/data.json").then(res => {
-          resolve(res.data)
-          state.shop_list = [res.data.tv, res.data.around, res.data.computer, res.data.parts, res.data.watch]
-        }).catch((err) => {
-          console.log("store请求接口失败" + err)
-        })
-      })
+    getShop(state, playload) {
+      state.shop_list = playload
+
     },
     // 获取所有用户的订单
-    getOrderList(state){
-      axios.get('/api/orderList').then(res=>{
-        state.orderList = [...res.data]
-      })
+    getOrderList(state, playload) {
+      state.orderList = playload
+
     }
 
   },
   actions: {
     //异步接收商品数据
     getShop(context) {
-      context.commit('getShop')
+      new Promise((resolve, reject) => {
+        axios.get("/api/data.json").then(res => {
+          resolve(res.data)
+          context.commit('getShop', [res.data.tv, res.data.around, res.data.computer, res.data.parts, res.data.watch])
+        }).catch((err) => {
+          console.log("store请求接口失败" + err)
+        })
+      })
     },
     getUsers(context) {
-      context.commit('getUsers')
+      axios.get('/api/users').then(
+        res => {
+          context.commit('getUsers', [...res.data])
+        }
+      ).catch((err) => { console.log(err) })
+
     },
-    getOrderList(context){
-      context.commit('getOrderList')
+    getOrderList(context) {
+      axios.get('/api/orderList').then(res => {
+        context.commit('getOrderList', [...res.data])
+      })
+
     }
   },
   modules: {
